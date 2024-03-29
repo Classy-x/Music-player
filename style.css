@@ -64,7 +64,7 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-image: url("../image/download.jpeg");
+    background-image: url("download.jpeg");
     background-position: center;
     background-size: contain;
 
