@@ -1,0 +1,142 @@
+body{
+ background-color:rgb(36,39,42) ;
+ display: flex;
+ height: 97vh;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ font-family: sans-serif;
+}
+
+#outer{
+    width:300px;
+    height: 450px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px 1px;
+}
+#menu{
+    display: grid;
+    grid-template-columns: 20px 100px 20px;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 40px;
+
+}
+#play.active {
+    box-shadow: inset -1px -1px 6px 1px rgba(255, 255, 255, 0.253), inset 3px 3px 6px 1px rgba(0, 0, 0, 0.658);
+}
+#next.active {
+    box-shadow: inset -1px -1px 6px 1px rgba(255, 255, 255, 0.253), inset 3px 3px 6px 1px rgba(0, 0, 0, 0.658);
+}
+#back.active {
+    box-shadow: inset -1px -1px 6px 1px rgba(255, 255, 255, 0.253), inset 3px 3px 6px 1px rgba(0, 0, 0, 0.658);
+}
+
+#sp1.active {
+    box-shadow: inset -1px -1px 6px 1px rgba(255, 255, 255, 0.253), inset 3px 3px 6px 1px rgba(0, 0, 0, 0.658);
+}
+
+#menu>span{
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   text-align: center;
+   line-height: 30px;
+   box-shadow:-1px -1px 6px 1px rgba(255, 255, 255, 0.253), 3px 3px 6px 1px rgba(0, 0, 0, 0.658) ;
+   color:rgba(255, 255, 255, 0.671);
+   cursor: pointer;
+}
+#menu>b{
+    text-align: center;
+    color:rgba(255, 255, 255, 0.808);
+
+}
+#img{
+    height: 150px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#img_span{
+    border: 5px solid rgb(16, 17, 19);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("../image/download.jpeg");
+    background-position: center;
+    background-size: contain;
+
+}
+.rotate {
+    animation: animate 2s infinite linear;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#audio_out{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: rgb(36,39,42);
+
+}
+#audio_out>audio{
+    width: 250px;
+    height: 20px;
+
+}
+
+#audi::-webkit-media-controls-panel {
+    background-color: rgb(36,39,42);
+}
+#audi::-webkit-media-controls-play-button {
+    display: none;
+}
+#audi::-webkit-media-controls-timeline{
+    margin-left: 0px;
+    width: 80px;
+}
+#audi::-webkit-media-controls-volume-slider::-webkit-media-slider-thumb {
+    display: none;
+}
+#audi::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+#audio_out>h3,#audio_out>p{
+  display: inline;
+  color: rgba(255, 255, 255, 0.863);
+  margin-top: -10px;
+}
+
+#control{
+    display: grid;
+    grid-template-columns: 20px 20px 20px;
+    margin-top:20px;
+    justify-content: center;
+    gap: 45px;
+    font-size: small;
+    text-align: center;
+}
+#control>span{
+   border-radius: 50%;
+   width: 35px;
+   height: 35px;
+   line-height: 35px;
+   box-shadow:-1px -1px 6px 1px rgba(255, 255, 255, 0.253), 3px 3px 6px 1px rgba(0, 0, 0, 0.658) ;
+   color:rgba(255, 255, 255, 0.671);
+   cursor: pointer;
+
+}
+#control>span:nth-child(2){
+    background-color: rgb(235,79,22);
+}
