@@ -13,12 +13,12 @@ Welcome to Awesome Music Player! This is a lightweight and customizable web-base
 ## Features
 
 - Play, pause, and skip functionality.
-- forward the song and backward the song.
+- Forward the song and backward the song.
 - Responsive design for mobile and desktop.
 
 ## Demo
 
-Check out the [demo]() to see Awesome Music Player in action!
+Check out the [demo](https://classy-x.github.io/Music-player/) to see Awesome Music Player in action!
 
 ## Usage
 
